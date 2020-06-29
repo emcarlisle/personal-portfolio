@@ -5,4 +5,11 @@
 #website-photo {
     height: auto;
     width: 500px;
+    float: left;
+}
+.photo-credit {
+    position: absolute;
+    bottom: 40px;
+    left: 16px;
+    color: red;
 }
