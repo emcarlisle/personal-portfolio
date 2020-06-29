@@ -1,3 +1,8 @@
 .jumbotron {
     text-align: center;
 }
+
+#website-photo {
+    height: auto;
+    width: 500px;
+}
