@@ -5,6 +5,7 @@
 .container-fluid {
     padding-left: 0%;
     padding-right: 0%;
+    position: relative;
 }
 
 #website-photo {
@@ -14,17 +15,26 @@
     margin-right: 40px;
     border-color: black;
 }
-.photo-credit {
+.bottom-left {
     position: absolute;
     bottom: 8px;
     left: 16px;
-    color: red;
+}
+
+#photo-credit {
+    color: black;
 }
 p#bio {
     text-align: center;
-    margin-top: 60px;
-    margin-right: 40px;
+    margin-top: 0px;
+    margin-right: 0%;
+    padding: 20px;
 }
 .header {
     text-align: center;
+}
+
+#portfolio-carousel {
+    height: 300px;
+    width: auto;
 }
