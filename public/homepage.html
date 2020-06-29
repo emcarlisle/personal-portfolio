@@ -83,35 +83,39 @@
 
     <!--Portfolio-->
     <div class="container-fluid" id="portfolio-pg">
-      <section id="portfolio">
+      <section class="container" style="position:relative;">
         <div
           id="portfolio-carousel"
-          class="carousel slide carousel-fade"
+          class="carousel slide"
           data-ride="carousel"
-          data-interval="3000"
-          data-pause="false"
         >
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img
-                src="/public/assets/images/project1.png"
-                class="d-block w-100"
+                src="/public/assets/images/drinking-at-home.png"
+                class="image img-fluid border border-dark rounded"
                 alt="project1-sample"
               />
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Drinking At Home</h5>
-                <a href="https://github.com/emcarlisle/Drinking-At-Home"
+              <div class="overlay carousel-caption d-block">
+                <h2 class="text1" >Drinking At Home</h2>
+                <a href="https://github.com/emcarlisle/Drinking-At-Home" class="text2"
                   >Check out my first project!</a
                 >
               </div>
             </div>
+
+
+
+
+
             <div class="carousel-item">
               <img
                 src="/public/assets/images/burgerapp.png"
-                class="d-block w-100"
+                class="img-fluid border border-dark rounded"
                 alt="burger-app-sample"
+                id="carousel-pics"
               />
-              <div class="carousel-caption d-none d-md-block">
+              <div class="carousel-caption d-block">
                 <h5>Burger App</h5>
                 <a href="https://github.com/emcarlisle/burger"
                   >My first full-stack application!</a
@@ -126,8 +130,9 @@
                 src="/public/assets/images/note-taker-pic.png"
                 class="d-block w-100"
                 alt="note-taker-sample"
+                id="carousel-pics"
               />
-              <div class="carousel-caption d-none d-md-block">
+              <div class="carousel-caption d-block">
                 <h5>Note-Taker App</h5>
                 <a href="https://github.com/emcarlisle/Note-Taker"
                   >My first deployed application using Heroku!</a
