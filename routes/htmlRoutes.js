@@ -1,35 +1,35 @@
-const Router = require('express').Router;
-const db = require('../models');
+// *********************************************************************************
+// html-routes.js - this file offers a set of routes for sending users to the various html pages
+// *********************************************************************************
 
-const htmlRoutes = new Router();
+// Dependencies
+// =============================================================
+var path = require("path");
 
-htmlRoutes.get('/', async (req, res) => {
-  const dbExamples = await db.Example.findAll({});
+// Routes
+// =============================================================
+module.exports = function(app) {
 
-  res.render('index', {
-    msg: 'Welcome!',
-    examples: dbExamples
+  // Each of the below routes just handles the HTML page that the user gets sent to.
+
+  // index route loads view.html
+  app.get("/", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/homepage.html"));
   });
-});
 
-// Load example page and pass in an example by id
-htmlRoutes.get('/example/:id', async (req, res) => {
-  const options = {
-    where: {
-      id: req.params.id
-    }
-  };
-
-  const dbExample = await db.Example.findOne(options);
-
-  res.render('example', {
-    example: dbExample
+  // cms route loads cms.html
+  app.get("/more", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/more.html"));
   });
-});
 
-// Render 404 page for any unmatched routes
-htmlRoutes.get('*', async (req, res) => {
-  res.render('404');
-});
+  // blog route loads blog.html
+  app.get("/homepage", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/homepage.html"));
+  });
 
-module.exports = htmlRoutes;    
+  // authors route loads author-manager.html
+  app.get("/portfolio", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/portfolio.html"));
+  });
+
+};
