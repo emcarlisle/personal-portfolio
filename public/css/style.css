@@ -30,6 +30,11 @@ p#bio {
   margin-right: 0%;
   padding: 20px;
 }
+
+.homepage-link {
+    float: right;
+    margin-right: 40px;
+}
 .header {
   text-align: center;
 }
