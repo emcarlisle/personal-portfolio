@@ -1,1 +1,3 @@
-/* javascript for click functions etc */
+$(document).ready(function () {
+    
+})
