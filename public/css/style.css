@@ -48,6 +48,7 @@ h1.header {
   padding: 0 4px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 20px;
 }
 
 .col {
@@ -62,6 +63,38 @@ h1.header {
   width: 100%;
 }
 
+/* Blur-zoom Container */
+.img-hover-zoom {
+  background: black;
+  overflow: hidden;
+}
+.img-hover-zoom--blur img {
+  transition: transform 1s, filter 1s ease-in-out;
+  filter: blur(2px);
+  transform: scale(1.2);
+}
+
+/* The Transformation */
+.img-hover-zoom--blur:hover img {
+  filter: blur(0);
+  transform: scale(1);
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+img#project1 {
+  height: 260px;
+}
+img#burgerapp {
+  height: 260px;
+  overflow: hidden;
+}
+img#notetakerapp {
+  height: 260px;
+  overflow: hidden;
+}
 
 @media only screen and (max-width: 768px) {
   /* For ipad: */
