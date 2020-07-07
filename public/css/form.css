@@ -1,9 +1,8 @@
-#form_container
-{
-	padding:15px 15px;
-	margin-top:15px;
-	background: rgba(0,0,0,0.5);	
-	color:#fff;
+#form_container {
+  padding: 15px 15px;
+  margin-top: 15px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
 }
 /*
 body
@@ -16,20 +15,17 @@ body
 } */
 
 .container-fluid#contact-me {
-    background-image: url('../assets/images/roses.jpg');
-	background-size: cover;
-	background-repeat:no-repeat;
-
+  background-image: url("../assets/images/roses.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-.upload-btn-wrapper 
-{
+.upload-btn-wrapper {
   position: relative;
   overflow: hidden;
   display: inline-block;
 }
 
-.upload-btn-wrapper input[type=file] 
-{
+.upload-btn-wrapper input[type="file"] {
   font-size: 100px;
   position: absolute;
   left: 0;
@@ -37,3 +33,20 @@ body
   opacity: 0;
 }
 
+i.fa {
+  padding: 20px;
+  margin: 20px;
+  font-size: 60px;
+  width: 30px;
+  text-decoration: none;
+}
+.fa:hover {
+  opacity: 0.7;
+}
+.fa-github {
+    color:black;
+}
+ul {
+    margin-left: 0%;
+    margin-right: 0%;
+}

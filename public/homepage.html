@@ -6,8 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <link rel="stylesheet" href="/public/css/style.css" media="screen" title="no title" charset="utf-8" />
-  <link rel="stylesheet" href="css/form.css" media="screen" charset="utf-8">
+  <link rel="stylesheet" href="/public/css/form.css" media="screen" charset="utf-8">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://code.jquery.com/jquery.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -72,20 +74,18 @@
   <!--Portfolio-->
   <section class="container-fluid" id="portfolio-pg" style="position: relative;">
     <section id="portfolio-section">
-      <div class="row">
-        <h1 class="header">Here's a sneak peek at some of my projects!</h1>
-      </div>
+      <h1 class="header">Here's a sneak peek at some of my projects!</h1>
       <div class="row d-flex justify-content-center">
         <div class="col img-hover-zoom img-hover-zoom--blur rounded border border-dark">
           <a href="https://emcarlisle.github.io/Drinking-At-Home/">
-            <img src="assets/images/drinking-at-home.png" id="project1" class="img-fluid rounded mx-auto d-block">
+            <img src="./assets/images/cocktail.jpg" id="project1" class="img-fluid rounded mx-auto d-block">
           </a>
           <a class="d-flex justify-content-center" style="padding-top:20px;"
             href="https://github.com/emcarlisle/Drinking-At-Home" id="github-link">Check out my work here!</a>
         </div>
         <div class="col img-hover-zoom img-hover-zoom--blur rounded border border-dark">
           <a href="https://burgerapphw11.herokuapp.com/">
-            <img src="assets/images/burgerapp.png" id="burgerapp"
+            <img src="./assets/images/burger.png" id="burgerapp"
               class="img-fluid rounded mx-auto d-block border border-dark ">
           </a>
           <a class="d-flex justify-content-center" style="padding-top:20px;" href="https://github.com/emcarlisle/burger"
@@ -93,14 +93,35 @@
         </div>
         <div class="col img-hover-zoom img-hover-zoom--blur rounded border border-dark">
           <a href="https://note-takerhw11.herokuapp.com/">
-            <img src="assets/images/note-taker-pic.png" id="notetakerapp"
+            <img src="./assets/images/notetaker.jpg" id="notetakerapp"
               class="img-fluid rounded mx-auto d-block border border-dark">
           </a>
           <a class="d-flex justify-content-center" style="padding-top:20px;"
             href="https://github.com/emcarlisle/Note-Taker" id="github-link">My first deployed app on Heroku!</a>
         </div>
+
+        <div class="col img-hover-zoom img-hover-zoom--blur rounded border border-dark">
+          <a href="https://note-takerhw11.herokuapp.com/">
+            <img src="./assets/images/employee-summary.jpg" id="summary-app"
+              class="img-fluid rounded mx-auto d-block border border-dark">
+          </a>
+          <a class="d-flex justify-content-center" style="padding-top:20px;"
+            href="https://github.com/emcarlisle/Note-Taker" id="github-link">Employee CLI App</a>
+        </div>
+
+        <div class="col img-hover-zoom img-hover-zoom--blur rounded border border-dark">
+          <a href="">
+            <img src="./assets/images/employee-tracker.jpg" id="tracker-app"
+              class="img-fluid rounded mx-auto d-block border border-dark">
+          </a>
+          <a class="d-flex justify-content-center" style="padding-top:20px;"
+            href="https://github.com/emcarlisle/Employee-Tracker" id="github-link">A MySql App</a>
+        </div>
+
+
       </div>
     </section>
+
   </section>
 
   <!--Contact Me-->
@@ -144,42 +165,39 @@
       </div>
       </div>
     </section>
+  </section>
 
-    <!-- Footer -->
-    <footer class="page-footer font-small special-color-dark pt-4">
+  <!-- Footer -->
+  <div class="container-fluid">
+    <footer class="page-footer" id="footer">
 
-      <!-- Footer Elements -->
-      <div class="container">
-
-        <!-- Social buttons -->
-        <ul class="list-unstyled list-inline text-center">
-          <li class="list-inline-item">
-            <a class="btn-floating btn-lg btn-git" type="button" role="button" href="https://github.com/emcarlisle">
-              <i class="fa fa-github"> </i>
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a class="btn-floating btn-tw mx-1" type="button" role="button" href="www.linkedin.com/in/carlisle-emily02">
-              <i class="fa fa-linkedin-square"> </i>
-            </a>
-          </li>
-        </ul>
-        <!-- Social buttons -->
-
-      </div>
-      <!-- Footer Elements -->
+      <!-- Social buttons -->
+      <ul class="list-unstyled list-inline text-center">
+        <li class="list-inline-item">
+          <a class="button" role="button" href="https://github.com/emcarlisle">
+            <i class="fa fa-github"> </i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="button" type="button" role="button" href="www.linkedin.com/in/carlisle-emily02">
+            <i class="fa fa-linkedin-square"> </i>
+          </a>
+        </li>
+      </ul>
+      <!-- Social buttons -->
 
       <!-- Copyright -->
       <div class="footer-copyright text-center py-3">© 2020 Copyright:
-        <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+        <p>(510) 468-3897</p>
       </div>
       <!-- Copyright -->
 
+
     </footer>
     <!-- Footer -->
-    <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-    <i class="fa fa-github" aria-hidden="true"></i>
-  </section>
+
+  </div>
+
 
 
 

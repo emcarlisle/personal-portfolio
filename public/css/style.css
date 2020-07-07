@@ -48,16 +48,16 @@ h1.header {
   padding: 0 4px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 20px;
 }
 
 .col {
-  flex: 33%;
-  max-width: 33%;
+  flex: 25%;
+  max-width: 25%;
   padding: 0 4px;
+  margin: 10px;
 }
 
-.col a {
+.col img {
   margin-top: 8px;
   vertical-align: middle;
   width: 100%;
@@ -65,8 +65,9 @@ h1.header {
 
 /* Blur-zoom Container */
 .img-hover-zoom {
-  background: black;
   overflow: hidden;
+  height: 200px;
+  width: 100%;
 }
 .img-hover-zoom--blur img {
   transition: transform 1s, filter 1s ease-in-out;
@@ -81,18 +82,30 @@ h1.header {
 }
 
 img#project1 {
-  height: 260px;
+  height: 150px;
   margin: 2px;
 }
 img#burgerapp {
-  height: 260px;
+  height: 150px;
   margin: 2px;
 }
 img#notetakerapp {
-  height: 260px;
+  height: 150px;
+  overflow: hidden;
+}
+img#summary-app {
+  height: 150px;
+  overflow: hidden;
+}
+img#tracker-app {
+  height: 150px;
   overflow: hidden;
 }
 
+footer.page-footer {
+  background: rgba(0, 0, 0, 0.562);
+  color: #fff;
+}
 @media only screen and (max-width: 768px) {
   /* For ipad: */
   .col {
