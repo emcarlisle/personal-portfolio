@@ -14,6 +14,13 @@ body
 	background-repeat:no-repeat;
 
 } */
+
+.container-fluid#contact-me {
+    background-image: url('../assets/images/roses.jpg');
+	background-size: cover;
+	background-repeat:no-repeat;
+
+}
 .upload-btn-wrapper 
 {
   position: relative;
