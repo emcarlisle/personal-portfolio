@@ -55,7 +55,6 @@ h1.header {
   flex: 33%;
   max-width: 33%;
   padding: 0 4px;
-  margin: 2px;
 }
 
 .col a {
@@ -81,16 +80,13 @@ h1.header {
   transform: scale(1);
 }
 
-img {
-  max-width: 100%;
-  vertical-align: middle;
-}
 img#project1 {
   height: 260px;
+  margin: 2px;
 }
 img#burgerapp {
   height: 260px;
-  overflow: hidden;
+  margin: 2px;
 }
 img#notetakerapp {
   height: 260px;
