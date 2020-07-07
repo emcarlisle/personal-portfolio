@@ -102,10 +102,6 @@ img#tracker-app {
   overflow: hidden;
 }
 
-footer.page-footer {
-  background: rgba(0, 0, 0, 0.562);
-  color: #fff;
-}
 @media only screen and (max-width: 768px) {
   /* For ipad: */
   .col {

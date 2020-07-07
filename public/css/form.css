@@ -32,10 +32,24 @@ body
   top: 0;
   opacity: 0;
 }
-
+.container-fluid {
+  padding-left: 0%;
+  padding-right: 0%;
+  position: relative;
+  box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+footer.page-footer {
+  background: rgba(0, 0, 0, 0.562);
+  height: 20%;
+  color: #fff;
+  text-align: center;
+}
+.footer-copyright {
+  text-align: center;
+}
 i.fa {
-  padding: 20px;
-  margin: 20px;
+  margin-left: 50px;
+  margin-top: 10px;
   font-size: 60px;
   width: 30px;
   text-decoration: none;
@@ -44,9 +58,9 @@ i.fa {
   opacity: 0.7;
 }
 .fa-github {
-    color:black;
+  color: black;
 }
 ul {
-    margin-left: 0%;
-    margin-right: 0%;
+  margin-left: 0%;
+  margin-right: 0%;
 }
