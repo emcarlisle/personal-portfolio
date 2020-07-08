@@ -13,7 +13,7 @@
   margin-bottom: 0%;
   text-align: center;
   font-family: "Courier New", Courier, monospace;
-
+  font-weight: bold;
 }
 .container-fluid {
   padding-left: 0%;
@@ -47,27 +47,24 @@ p#bio {
   width: 100%;
   padding: 20px;
   font-family: "Courier New", Courier, monospace;
-
-
+  font-weight: bold;
 }
 main.container-fluid {
-    background-image: url("../images/rose-background.jpg"); 
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-image: url("../images/rose-background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 section#portfolio-section {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("../images/lily.jpg"); 
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    
-
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/lily.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 h1.header {
   text-align: center;
   font-family: "Courier New", Courier, monospace;
-
 }
 
 .row {
@@ -93,18 +90,34 @@ h1.header {
   overflow: hidden;
   width: 100%;
   background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
-
 }
+.img-hover-zoom span {
+  display: none;
+  position: relative;
+  top: -87px;
+  width: 100%;
+  padding: 5px;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+.img-hover-zoom:hover span {
+  display: block;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-name: appear;
+  animation-name: appear;
+}
+
 .img-hover-zoom--blur img {
   transition: transform 1s, filter 1s ease-in-out;
-  filter: blur(2px);
+  filter: blur(0);
   transform: scale(1.2);
-  
 }
 
 /* The Transformation */
 .img-hover-zoom--blur:hover img {
-  filter: blur(0);
+  filter: blur(2px);
   transform: scale(1);
 }
 
