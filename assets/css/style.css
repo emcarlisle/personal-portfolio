@@ -90,6 +90,8 @@ h1.header {
   overflow: hidden;
   width: 100%;
   background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  margin: 1%;
+  padding: 2%;
 }
 .img-hover-zoom span {
   display: none;
@@ -118,7 +120,7 @@ h1.header {
 /* The Transformation */
 .img-hover-zoom--blur:hover img {
   filter: blur(2px);
-  transform: scale(1);
+  transform: scale(1.1);
 }
 
 img#project1 {
