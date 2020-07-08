@@ -10,6 +10,7 @@
     integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <link rel="stylesheet" href="/public/css/style.css" media="screen" title="no title" charset="utf-8" />
   <link rel="stylesheet" href="/public/css/form.css" media="screen" charset="utf-8">
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://code.jquery.com/jquery.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -22,7 +23,7 @@
 <body class="d-flex flex-column h-100">
 
   <!--Navbar-->
-  <div class="container-fluid">
+  <div class="container-fluid" id="nav">
     <!--Jumbotron and img?-->
     <section class="jumbotron jumbotron-fluid">
       <div class="container">
@@ -30,8 +31,8 @@
         <p class="lead">Full Stack Web Developer</p>
       </div>
       <nav class="navbar justify-content-center">
-        <a href="homepage.html" id="home-btn" class="btn btn-light">Home</a>
-        <a href="more.html" id="more-btn" class="btn btn-light">More</a>
+        <a href="/index.html" id="home-btn" class="btn btn-light">Home</a>
+        <a href="/public/more.html" id="more-btn" class="btn btn-light">More</a>
       </nav>
     </section>
   </div>
@@ -39,7 +40,7 @@
   <!--About Me-->
   <main class="container-fluid" id="home-pg">
     <section id="about-me-section" style="position: relative;">
-      <img src="assets/images/website-photo.jpeg" id="website-photo" class="img-fluid border border-dark rounded"
+      <img src="/public/assets/images/website-photo.jpeg" id="website-photo" class="img-fluid border border-dark rounded"
         alt="bio-photo" />
       <div style="position: absolute;" id="photo-credit">
         Photo By: K-9
@@ -78,14 +79,14 @@
       <div class="row">
         <div class="col img-hover-zoom img-hover-zoom--blur rounded border border-dark">
           <a href="https://emcarlisle.github.io/Drinking-At-Home/">
-            <img src="./assets/images/cocktail.jpg" id="project1" class="img-fluid rounded mx-auto d-block">
+            <img src="/public/assets/images/cocktail.jpg" id="project1" class="img-fluid rounded mx-auto d-block">
           </a>
           <a class="d-flex justify-content-center" style="padding-top:20px;"
             href="https://github.com/emcarlisle/Drinking-At-Home" id="github-link">Check out my work here!</a>
         </div>
         <div class="col img-hover-zoom img-hover-zoom--blur rounded border border-dark">
           <a href="https://burgerapphw11.herokuapp.com/">
-            <img src="./assets/images/burger.png" id="burgerapp"
+            <img src="public/assets/images/burger.png" id="burgerapp"
               class="img-fluid rounded mx-auto d-block border border-dark ">
           </a>
           <a class="d-flex justify-content-center" style="padding-top:20px;"href="https://github.com/emcarlisle/burger"
@@ -93,7 +94,7 @@
         </div>
         <div class="col img-hover-zoom img-hover-zoom--blur rounded border border-dark">
           <a href="https://note-takerhw11.herokuapp.com/">
-            <img src="./assets/images/notetaker.jpg" id="notetakerapp"
+            <img src="public/assets/images/notetaker.jpg" id="notetakerapp"
               class="img-fluid rounded mx-auto d-block border border-dark">
           </a>
           <a class="d-flex justify-content-center" style="padding-top:20px;"
@@ -102,7 +103,7 @@
 
         <div class="col img-hover-zoom img-hover-zoom--blur rounded border border-dark">
           <a href="https://note-takerhw11.herokuapp.com/">
-            <img src="./assets/images/employee-summary.jpg" id="summary-app"
+            <img src="public/assets/images/employee-summary.jpg" id="summary-app"
               class="img-fluid rounded mx-auto d-block border border-dark">
           </a>
           <a class="d-flex justify-content-center" style="padding-top:20px;"
@@ -111,7 +112,7 @@
 
         <div class="col img-hover-zoom img-hover-zoom--blur rounded border border-dark">
           <a href="">
-            <img src="./assets/images/employee-tracker.jpg" id="tracker-app"
+            <img src="public/assets/images/employee-tracker.jpg" id="tracker-app"
               class="img-fluid rounded mx-auto d-block border border-dark">
           </a>
           <a class="d-flex justify-content-center" style="padding-top:20px;"
@@ -167,10 +168,31 @@
     </section>
   </section>
 
+  <div class="bgimg d-none" id="more-pg">
+    <div class="topleft">
+      <a href="/index.html" id="back-btn" class="btn btn-light">Back to Home</a>
+    </div>
+    <div class="middle container">
+      <div class="content">
+        <h1>COMING SOON</h1>
+        <hr>
+        <p>Check back here soon for more updates!</p>
+      </div>
+    </div>
+
+    <div class="bottomleft container" id="credentials">
+      <div class="content" id="credentials">
+        <p>Emily Carlisle</p>
+        <p>Full Stack Web Developer</p>
+      </div>
+    </div>
+
+  </div>
+  
   <!-- Footer -->
   <div class="container-fluid">
     <footer class="page-footer" id="footer">
-
+      
       <!-- Social buttons -->
       <ul class="list-unstyled list-inline">
         <li class="list-inline-item">
@@ -185,39 +207,18 @@
         </li>
       </ul>
       <!-- Social buttons -->
-
+      
       <!-- Copyright -->
       <div class="footer-copyright py-3">© 2020 Copyright:
         <p>(510) 468-3897</p>
       </div>
       <!-- Copyright -->
-
-
+      
+      
     </footer>
     <!-- Footer -->
-
+    
   </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </body>
 
 
@@ -225,3 +226,24 @@
 <script src="/js/index.js"></script>
 
 </html>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
