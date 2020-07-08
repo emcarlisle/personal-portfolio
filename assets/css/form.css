@@ -15,7 +15,7 @@ body
 } */
 
 .container-fluid#contact-me {
-  background-image: url("/assets/images/roses.jpg");
+  background-image: url("../images/roses.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
