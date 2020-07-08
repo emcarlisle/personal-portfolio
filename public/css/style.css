@@ -4,8 +4,13 @@
 }
 
 .jumbotron {
-  text-align: center;
-  box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-image: url("/public/assets/images/sunset.jpg");
+  height: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin-bottom: 0%;
 }
 
 .container-fluid {
@@ -46,8 +51,6 @@ h1.header {
   display: flex;
   flex-wrap: wrap;
   padding: 0 4px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .col {
@@ -57,7 +60,7 @@ h1.header {
   margin: 10px;
 }
 
-.col img {
+.col a {
   margin-top: 8px;
   vertical-align: middle;
   width: 100%;
@@ -66,7 +69,6 @@ h1.header {
 /* Blur-zoom Container */
 .img-hover-zoom {
   overflow: hidden;
-  height: 200px;
   width: 100%;
 }
 .img-hover-zoom--blur img {
@@ -102,15 +104,15 @@ img#tracker-app {
   overflow: hidden;
 }
 
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   /* For ipad: */
   .col {
-    display: block;
     flex: 50%;
     max-width: 50%;
+    display: block;
   }
 }
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 600px) {
   /* For mobile iphone plus phones: */
   .col {
     flex: 100%;
