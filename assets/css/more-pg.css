@@ -20,7 +20,7 @@ html {
 
 
 .bgimg {
-  background-image: url("/public/assets/images/sanfrancisco.jpg");
+  background-image: url("/assets/images/sanfrancisco.jpg");
   height: 100%;
   background-position: center;
   background-size: cover;
