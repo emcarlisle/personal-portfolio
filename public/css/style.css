@@ -12,6 +12,8 @@
   position: relative;
   margin-bottom: 0%;
   text-align: center;
+  font-family: "Courier New", Courier, monospace;
+
 }
 .container-fluid {
   padding-left: 0%;
@@ -44,6 +46,8 @@ p#bio {
   color: #f1f1f1;
   width: 100%;
   padding: 20px;
+  font-family: "Courier New", Courier, monospace;
+
 
 }
 main.container-fluid {
@@ -52,8 +56,18 @@ main.container-fluid {
     background-repeat: no-repeat;
     background-size: cover;
 }
+section#portfolio-section {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("/public/assets/images/lily.jpg"); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+
+}
 h1.header {
   text-align: center;
+  font-family: "Courier New", Courier, monospace;
+
 }
 
 .row {
@@ -78,11 +92,14 @@ h1.header {
 .img-hover-zoom {
   overflow: hidden;
   width: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+
 }
 .img-hover-zoom--blur img {
   transition: transform 1s, filter 1s ease-in-out;
   filter: blur(2px);
   transform: scale(1.2);
+  
 }
 
 /* The Transformation */
