@@ -3,7 +3,7 @@ import React from "react";
 function About() {
   return (
     <main className="container-fluid" id="home-pg">
-      <section id="about-me-section" style="position: relative;">
+      <section id="about-me-section" className="about-page">
         <img
           src="assets/images/website-photo.jpeg"
           id="website-photo"
@@ -43,4 +43,5 @@ function About() {
   );
 }
 
+// change styles into classnames and then include into css
 export default About;
