@@ -1,16 +1,17 @@
 import React from "react";
+import websitePic from "../About/website-photo.jpeg";
 
 function About() {
   return (
     <main className="container-fluid" id="home-pg">
       <section id="about-me-section" className="about-page">
         <img
-          src="assets/images/website-photo.jpeg"
+          src={websitePic}
           id="website-photo"
           className="img-fluid border border-dark rounded"
           alt="bio-photo"
         />
-        <div style="position: absolute;" id="photo-credit">
+        <div className="photo-credit">
           Photo By: K-9
         </div>
         <h1 className="header">Get to Know Me</h1>
