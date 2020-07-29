@@ -1,0 +1,160 @@
+/* table of contents in sections*/
+* {
+  box-sizing: border-box;
+}
+.about-page {
+  position: relative;
+}
+.jumbotron {
+  background-image: url("../images/sunset.jpg");
+  height: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin-bottom: 0%;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+}
+.container-fluid {
+  padding-left: 0%;
+  padding-right: 0%;
+  position: relative;
+  box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#website-photo {
+  height: auto;
+  width: 300px;
+  float: left;
+  margin-right: 40px;
+  border-color: black;
+  border-radius: 20%;
+}
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+#photo-credit {
+  color: black;
+}
+p#bio {
+  bottom: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 77%; /* added */
+  margin: auto; /* added */
+  padding: 20px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+}
+main.container-fluid {
+  background-image: url("../images/rose-background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+section#portfolio-section {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/lily.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+h1.header {
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+.col {
+  max-width: 25%;
+  padding: 0 4px;
+}
+.col a {
+  padding-top: 17%;
+  vertical-align: middle;
+  width: 100%;
+}
+/* Blur-zoom Container */
+.portfolio {
+  max-width: 90%;
+  margin: 0 auto;
+}
+.img-hover-zoom {
+  overflow: hidden;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  margin: 1%;
+  padding: 2%;
+}
+.img-hover-zoom span {
+  display: none;
+  position: relative;
+  top: -87px;
+  width: 100%;
+  padding: 2px;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+.img-hover-zoom:hover span {
+  display: inline-flex;
+  padding-top: 5%; /* added */
+  /* added */
+  /* -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    -webkit-animation-name: appear;
+    animation-name: appear; */
+}
+.img-hover-zoom--blur img {
+  transition: transform 1s, filter 1s ease-in-out;
+  filter: blur(0);
+  transform: scale(1.2);
+}
+/* The Transformation */
+.img-hover-zoom--blur:hover img {
+  filter: blur(2px);
+  transform: scale(1.1);
+}
+img#project1 {
+  height: 150px;
+  margin: 2px;
+}
+img#burgerapp {
+  height: 150px;
+  margin: 2px;
+}
+img#notetakerapp {
+  height: 150px;
+  overflow: hidden;
+}
+img#summary-app {
+  height: 150px;
+  overflow: hidden;
+}
+img#tracker-app {
+  height: 150px;
+  overflow: hidden;
+}
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .col {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
