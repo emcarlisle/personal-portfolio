@@ -15,7 +15,6 @@ function More() {
                             ? "nav-link active"
                             : "nav-link"
                     }
-                    onClick={() => props.handlePageChange("")}
                 >Back to Home
                 </Link>
             </div>
