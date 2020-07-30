@@ -1,11 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import sunset from "./sunset.jpg";
 
 
 function Navbar() {
   return (
     <div className="container-fluid" id="nav">
-      <section className="jumbotron jumbotron-fluid">
+      <section className="jumbotron jumbotron-fluid" style={{backgroundImage: `url(${sunset})`}}>
         <div className="container">
           <h1 className="display-4">I am Emily Carlisle</h1>
           <p className="lead">Full Stack Web Developer</p>
