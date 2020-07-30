@@ -1,10 +1,11 @@
 import React from "react";
 import websitePic from "../About/website-photo.jpeg";
+import roseBackground from "./rose-background.jpg";
 
 function About() {
   return (
     <main className="container-fluid" id="home-pg">
-      <section id="about-me-section" className="about-page">
+      <section id="about-me-section" className="about-page" style={{backgroundImage: `url(${roseBackground})`}}>
         <img
           src={websitePic}
           id="website-photo"
