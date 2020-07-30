@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import sunset from "./sunset.jpg";
 
-function Navbar() {
+function Navbar(props) {
   return (
     <div className="container-fluid" id="nav">
       <section
@@ -24,6 +24,7 @@ function Navbar() {
                     ? "nav-link active"
                     : "nav-link"
                 }
+                onClick={() => props.handlePageChange("")}
               >
                 About
               </Link>
